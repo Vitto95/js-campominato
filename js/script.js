@@ -1,5 +1,17 @@
 //Dichiarazione variabili
 var pc_q = 16;
+//impostazione difficoltà
+var max_q = 100; // valore default
+var level = parseInt(prompt("A quale difficoltà vuoi giocare?"));
+if (level === 0) {
+  var max_q = 100;
+} else if (level === 1) {
+  max_q = 80;
+} else if (level === 2) {
+  max_q = 50;
+} else {
+  alert("Valore non valido");
+}
 var max_q = 100;
 var user_q = max_q - pc_q;
 var arr_insert = [];
