@@ -19,6 +19,10 @@ while (endGame == false) {
       alert("ATTENZIONE! hai già inserito questo numero");
     } else if (pc_numbers(pc_q, max_q).includes(number_q) == true) {
       alert("Hai perso...");
+      console.log("Tentativi fatti: " + (arr_insert.length + 1));
+      console.log(
+        "Il numero che ti ha fatto perdere è stato il numero " + number_q
+      );
       endGame = true;
     } else {
       arr_insert.push(number_q);
